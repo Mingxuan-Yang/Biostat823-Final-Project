@@ -22,8 +22,8 @@ if session == "Overview":
     
     #sidebar
     st.sidebar.subheader("Overview")
-    date_range = st.sidebar.date_input('Range of date:', [min(df_line['date']), max(df_line['date'])],min_value = min(df_line['date']), max_value = max(df_line['date']))
-    # date_range =  st.sidebar.slider('Range of date:', min(df_line['date']), max(df_line['date']), (pd.to_datetime('2020-03-01').date(), pd.to_datetime('2020-10-01').date()))
+    # date_range = st.sidebar.date_input('Range of date:', [min(df_line['date']), max(df_line['date'])],min_value = min(df_line['date']), max_value = max(df_line['date']))
+    date_range =  st.sidebar.slider('Range of date:', min(df_line['date']), max(df_line['date']), (pd.to_datetime('2020-03-01').date(), pd.to_datetime('2020-10-01').date()))
     cols = st.sidebar.multiselect('Measure of Severity:', df_line.columns[:2].to_list(), default = df_line.columns[:2].to_list())
     dates = [date_range[0]]
     while dates[-1] <= date_range[1]:
