@@ -7,9 +7,29 @@ import altair as alt
 import plotly.express as px
 import plotly.graph_objs as go
 import datetime
+from PIL import Image
 
-session = st.sidebar.selectbox("Section", ["Overview", "By Country", "Economic Perspective"])
+session = st.sidebar.selectbox("Section", ["Welcome!", "Overview", "By Country", "Economic Perspective", "Dietary Perspective"])
 st.title('COVID-19 Dashboard')
+
+if session == "Welcome!":
+
+    st.sidebar.subheader("Welcome to our dashboard!")
+
+    # image
+    image = Image.open('img/covid-19.png')
+    st.image(image, width = 700)
+    st.subheader("Introduction")
+    st.write("""
+    This is a dashboard about COVID-19, its economic influence and the potential dietary method to prevent it. This dashboard is divided into the following five parts:
+    - Welcome!
+    - Overview
+    - By Country
+    - Economic Perspective
+    - Dietary Perspective
+    
+    The codes and Machine Learning analysis can be found at the [Github repository](https://github.com/biostat823-FinalProject/Game-of-Data).""")
+    
 
 if session == "Overview":
     df_line = pd.read_csv('./Data/by_country.csv')[['location', 'date', 'total_cases', 'total_deaths']]

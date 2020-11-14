@@ -11,3 +11,5 @@ The dashboard is constructed through [streamlit](https://www.streamlit.io/) and 
 ```
 streamlit run my_app.py
 ```
+
+This dashboard is also deployed through Heroku at [this link](https://covid-19-823.herokuapp.com/).
