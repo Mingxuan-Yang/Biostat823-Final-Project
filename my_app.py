@@ -107,7 +107,7 @@ if session == 'By Country':
     ))
     
     fig_map.update_layout(
-        width = 900, height = 500,
+        width = 700, height = 500,
         geo = dict(showlakes = True, lakecolor = 'rgb(255, 255, 255)'))
     
     # animation plot
