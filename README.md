@@ -1,15 +1,22 @@
-# COVID-19 Dashboard
+# COVID-19 Analysis
 
-This is the final project for course BIOSTAT 823 (Statistical Program for Big Data) at Duke University. The main accomplishment is a dashboard about COVID-19. The dashboard contains three sections:
+## Introduction
+This is the final project for course BIOSTAT 823 (Statistical Program for Big Data) at Duke University. The major data products are a dashboard and a report about COVID-19. The relevant technologies are:
 
-- Overview
-- By Country
-- Economic Perspective
+- Plotly
+- Streamlit
+- Flourish
+- Heroku
+- Random Forest Regression
+- Elastic Net Regression
+- Gradient Boosting Regression
+- Grid Search Cross Validation Parameter Tuning
 
-The dashboard is constructed through [streamlit](https://www.streamlit.io/) and can be obtained by running the following code in the terminal:
+This dashboard can be obtained [here](https://covid-19-823.herokuapp.com/).
 
-```
-streamlit run my_app.py
-```
+## Authors
 
-This dashboard is also deployed through Heroku at [this link](https://covid-19-823.herokuapp.com/).
+- Mingxuan Yang
+- Linlin Li
+- Yijie He
+- Zilin Yin
