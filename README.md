@@ -24,7 +24,7 @@ The COVID-19 datasets are from [Amazon Web Services (AWS) data lake](https://dj2
 The diet information and corresponding COVID-19 recovery rate data are from [Kaggle](https://www.kaggle.com/mariaren/covid19-healthy-diet-dataset?select=Fat_Supply_Quantity_Data.csv).
 
 - **Economic Datasets**  
-The economic impacts of COVID-19, represented by GDP growth rate of G20 or G7 countries, are provided by Organisation for Economic Co-operation and Development (OECD).""")
+The economic impacts of COVID-19, represented by GDP growth rate of G20 or G7 countries, are provided by Organisation for Economic Co-operation and Development (OECD).
 
 ## Authors
 
