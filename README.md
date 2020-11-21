@@ -12,7 +12,7 @@ This is the final project for course BIOSTAT 823 (Statistical Program for Big Da
 - Gradient Boosting Regression
 - Grid Search Cross Validation Parameter Tuning
 
-This dashboard can be obtained [here](https://covid-19-823.herokuapp.com/).
+The dashboard can be obtained [here](https://covid-19-823.herokuapp.com/).
 
 ## Authors
 
