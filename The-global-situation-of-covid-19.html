@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+
+</head>
+<body>
+    <div id="c977488af6044e13a3e2104e8163bbe8" class="chart-container" style="width:1920px; height:1080px;"></div>
+    <script>
+        var chart_c977488af6044e13a3e2104e8163bbe8 = echarts.init(
+            document.getElementById('c977488af6044e13a3e2104e8163bbe8'), 'macarons', {renderer: 'canvas'});
+        var option_c977488af6044e13a3e2104e8163bbe8 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": false,
+            "data": [
+                {
+                    "name": "United States",
+                    "value": 9486486.0
+                },
+                {
+                    "name": "India",
+                    "value": 8364086.0
+                },
+                {
+                    "name": "Brazil",
+                    "value": 5590025.0
+                },
+                {
+                    "name": "Russia",
+                    "value": 1693454.0
+                },
+                {
+                    "name": "France",
+                    "value": 1543321.0
+                },
+                {
+                    "name": "Argentina",
+                    "value": 1205915.0
+                },
+                {
+                    "name": "Colombia",
+                    "value": 1108084.0
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 1099059.0
+                },
+                {
+                    "name": "Mexico",
+                    "value": 943630.0
+                },
+                {
+                    "name": "Peru",
+                    "value": 911787.0
+                },
+                {
+                    "name": "Italy",
+                    "value": 790377.0
+                },
+                {
+                    "name": "South Africa",
+                    "value": 730548.0
+                },
+                {
+                    "name": "Iran",
+                    "value": 646164.0
+                },
+                {
+                    "name": "Germany",
+                    "value": 597583.0
+                },
+                {
+                    "name": "Chile",
+                    "value": 515042.0
+                },
+                {
+                    "name": "Iraq",
+                    "value": 485870.0
+                },
+                {
+                    "name": "Poland",
+                    "value": 439536.0
+                },
+                {
+                    "name": "Indonesia",
+                    "value": 421731.0
+                },
+                {
+                    "name": "Ukraine",
+                    "value": 420617.0
+                },
+                {
+                    "name": "Bangladesh",
+                    "value": 414164.0
+                }
+            ],
+            "radius": [
+                "10%",
+                "125%"
+            ],
+            "center": [
+                "50%",
+                "66%"
+            ],
+            "roseType": "area",
+            "label": {
+                "show": true,
+                "position": "inside",
+                "margin": 8,
+                "fontSize": 13,
+                "formatter": "{b}"
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "United States",
+                "India",
+                "Brazil",
+                "Russia",
+                "France",
+                "Argentina",
+                "Colombia",
+                "United Kingdom",
+                "Mexico",
+                "Peru",
+                "Italy",
+                "South Africa",
+                "Iran",
+                "Germany",
+                "Chile",
+                "Iraq",
+                "Poland",
+                "Indonesia",
+                "Ukraine",
+                "Bangladesh"
+            ],
+            "selected": {},
+            "show": true,
+            "bottom": "15%",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Global COVID-19 Situation (Confirmed Cases)",
+            "subtext": "TOP 20 countries as of November 5",
+            "left": "left",
+            "top": "top",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#0c2a46",
+                "fontWeight": "bold",
+                "fontFamily": "Microsoft YaHei",
+                "fontSize": 35
+            },
+            "subtextStyle": {
+                "color": "#0c2a46",
+                "fontWeight": "bold",
+                "fontFamily": "Microsoft YaHei",
+                "fontSize": 25
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "top": "75%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "\u77e9\u5f62\u9009\u62e9",
+                    "polygon": "\u5708\u9009",
+                    "lineX": "\u6a2a\u5411\u9009\u62e9",
+                    "lineY": "\u7eb5\u5411\u9009\u62e9",
+                    "keep": "\u4fdd\u6301\u9009\u62e9",
+                    "clear": "\u6e05\u9664\u9009\u62e9"
+                }
+            }
+        }
+    }
+};
+        chart_c977488af6044e13a3e2104e8163bbe8.setOption(option_c977488af6044e13a3e2104e8163bbe8);
+    </script>
+</body>
+</html>
