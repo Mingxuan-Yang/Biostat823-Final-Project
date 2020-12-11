@@ -1,5 +1,7 @@
 # COVID-19 Analysis
 
+*Project Date: 2020-11-20*
+
 ## Introduction
 This is the final project for course BIOSTAT 823 (Statistical Program for Big Data) at Duke University. The major data products are a dashboard and a report about COVID-19. The relevant technologies are:
 
@@ -28,8 +30,8 @@ The economic impacts of COVID-19, represented by GDP growth rate of G20 or G7 co
 
 ## Authors
 
-- Linlin Li
 - Mingxuan Yang
+- Linlin Li
 - Yijie He
 - Zilin Yin
 
