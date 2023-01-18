@@ -133,7 +133,7 @@ if session == "Overview":
         st.write("""This is an overview figure from January 10, 2020 to November 6, 2020. Certain date range can be selected using the sidebar.""")
         st.plotly_chart(fig_line)
 
-        with st.beta_expander("Figure Details"):
+        with st.expander("Figure Details"):
              st.write("""
                 The data is from [Amazon Web Services (AWS) data lake](https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/). The cases and deaths for each day is calculated by the rolling mean with a window of 3 days.
              """)
@@ -344,7 +344,7 @@ if session == "Dietary Perspective":
             st.subheader(f'The Relationship between {cat.title()} and COVID-19 Recovery Rate')
             st.plotly_chart(fig1)
 
-            with st.beta_expander("Figure Details"):
+            with st.expander("Figure Details"):
                 st.write("""For the logarithmic form, to obtain valid transformation. The x axis and y
                 axis are calculated by  
                 new x = log(x + 3)  
@@ -378,7 +378,7 @@ if session == "Dietary Perspective":
             st.subheader(f'The Relationship between {cat1.title()} and {cat2.title()}')
             st.plotly_chart(fig1)
 
-            with st.beta_expander("Figure Details"):
+            with st.expander("Figure Details"):
                 st.write("""For the logarithmic form, to obtain valid transformation. The x axis and y
                 axis are calculated by  
                 new x = log(x + 3)  
