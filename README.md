@@ -8,7 +8,7 @@ This is the final project for course BIOSTAT 823 (Statistical Program for Big Da
 - Plotly
 - Streamlit
 - Flourish
-- Heroku
+- Streamlit Community Cloud
 - SQL (to extract data from AWS)
 - Random Forest Regression
 - Elastic Net Regression
