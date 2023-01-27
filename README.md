@@ -6,9 +6,8 @@
 This is the final project for course BIOSTAT 823 (Statistical Program for Big Data) at Duke University. The major data products are a dashboard and a report about COVID-19. The relevant technologies are:
 
 - Plotly
-- Streamlit
+- Streamlit & Streamlit Community Cloud
 - Flourish
-- Streamlit Community Cloud
 - SQL (to extract data from AWS)
 - Random Forest Regression
 - Elastic Net Regression
