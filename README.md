@@ -15,7 +15,7 @@ This is the final project for course BIOSTAT 823 (Statistical Program for Big Da
 - Gradient Boosting Regression
 - Grid Search Cross Validation Parameter Tuning
 
-The dashboard can be obtained [here](https://covid-19-823.herokuapp.com/).
+The dashboard can be obtained [here](https://mingxuan-yang-phd-dashboard-app-onor3b.streamlit.app/).
 
 ## Datasets
 
@@ -37,4 +37,4 @@ The economic impacts of COVID-19, represented by GDP growth rate of G20 or G7 co
 
 ## My Contribution
 
-I finished the entire dashboard and deployed it using Heroku. The report and machine learning codes are done by my teammates.
+I finished the entire dashboard and deployed it using Streamlit Community Cloud. The report and machine learning codes are done by my teammates.
