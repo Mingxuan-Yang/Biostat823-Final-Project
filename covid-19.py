@@ -61,7 +61,9 @@ if session == "Overview":
         df_line = pd.read_csv('./Data/by_country.csv')[['location', 'date', 'total_cases', 'total_deaths']]
         df_line = df_line[df_line['location'] == 'World']
         date = df_line['date']
-        df_line = df_line.rolling(3).mean()
+        # df_line = df_line.rolling(3).mean()
+        # Updated on 08/05/2023: caused error in the future pandas package version
+        df_line = df_line[['total_cases', 'total_deaths']].rolling(3).mean()
         df_line['date'] = pd.to_datetime(date).dt.date
         df_line = df_line.dropna()
         df_line.rename({'total_cases': 'Total Cases', 'total_deaths': 'Total Deaths'}, axis = 1, inplace = True)
@@ -179,9 +181,9 @@ if session == "Overview":
         # table
         st.subheader('Rank of Countries with the Most Cases/Deaths')
         if change_arrange:
-            df_rank = df_map[['location', 'date', col_name]].sort_values(col_name, ascending=True).reset_index(drop=True)
+            df_rank = df_map[df_map['date'] == dates][['location', 'date', col_name]].sort_values(col_name, ascending=True).reset_index(drop=True)
         else:
-            df_rank = df_map[['location', 'date', col_name]].sort_values(col_name, ascending=False).reset_index(drop=True)
+            df_rank = df_map[df_map['date'] == dates][['location', 'date', col_name]].sort_values(col_name, ascending=False).reset_index(drop=True)
         df_rank = df_rank.reset_index().rename({'index': 'rank'}, axis=1)
         df_rank['rank'] = df_rank['rank'] + 1
         st.write(df_rank.iloc[(num[0] - 1):num[1], :])
